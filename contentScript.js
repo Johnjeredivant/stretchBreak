@@ -15,13 +15,11 @@ const arrayOfGifs = [
   'https://i.imgur.com/7tiR1kz.gif',
 ]
 
-let randomIndex = Math.floor(Math.random() * arrayOfGifs.length);
-
 function stretchBreak (){
   //change all the images
   const images = document.getElementsByTagName('img');
   for(const eachImage of images){
-    eachImage.src = arrayOfGifs[randomIndex];
+    eachImage.src = arrayOfGifs[Math.floor(Math.random() * arrayOfGifs.length)];
   }
   //change all the text.
   const texts = document.querySelectorAll('h1, h2, h3, h4, h5, h6, h7, h8, p, button, figcaption, li, td, pation, span, a');
