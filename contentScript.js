@@ -1,4 +1,4 @@
-console.log("Stretch Break! - Content Script is Running");
+console.log('Stretch Break! - Content Script is Running');
 
 /*
 We want to enforce stretch breaks. 
@@ -8,16 +8,16 @@ We are going to change all the text to "go stretch!" and change the images to a 
 
 
 function stretchBreak (){
-    //change all the images
-    let images = document.getElementsByTagName('img');
-    for(let eachImage of images){
-        eachImage.src = 'https://i.imgur.com/5ocRuPi.gif';
-    }
-    //change all the text.
-    let texts = document.querySelectorAll('h1, h2, h3, h4, h5, p, li, td, pation, span, a');
-    for(let eachOne of texts){
-        eachOne.innerHTML = "Go Stretch!";
-    }
+  //change all the images
+  let images = document.getElementsByTagName('img');
+  for(let eachImage of images){
+    eachImage.src = 'https://i.imgur.com/5ocRuPi.gif';
+  }
+  //change all the text.
+  let texts = document.querySelectorAll('h1, h2, h3, h4, h5, p, li, td, pation, span, a');
+  for(let eachOne of texts){
+    eachOne.innerHTML = 'Go Stretch!';
+  }
 };
 
 const timeInSeconds = 10
